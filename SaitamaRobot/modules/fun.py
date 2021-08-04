@@ -176,16 +176,7 @@ def shrug(update: Update, context: CallbackContext):
     reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
     reply_text(r"¯\_(ツ)_/¯")
 
-
-@run_async
-def reverse(update: Update, context: CallbackContext):
-    msg = update.effective_message
-    reply_text = msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
-    reply_text(
-        "➠ /reverse udah diganti /grs biar cepet :v \n➠ /reverse is changed to /grs"
-    )
-
-
+    
 @run_async
 def rlg(update: Update, context: CallbackContext):
     eyes = random.choice(fun_strings.EYES)
